@@ -1,0 +1,10 @@
+# Jupyter
+.ipynb_checkpoints
+
+# Vivado Files
+boards/RFSoC4x2/rfsoc_offload/rfsoc_offload/
+*.log
+*.str
+*.jou
+NA/
+.Xil/

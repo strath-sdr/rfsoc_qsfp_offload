@@ -1,0 +1,80 @@
+diff --git a/NetLayers/Makefile b/NetLayers/Makefile
+index 6510e3e..032784f 100755
+--- a/NetLayers/Makefile
++++ b/NetLayers/Makefile
+@@ -16,7 +16,7 @@ help:
+ 	@echo ""
+ 
+ 
+-DEVICE ?= xilinx_u280_xdma_201920_3
++DEVICE ?= rfsoc_4x2
+ KRNL_NAME := networklayer
+ SUBMODULENAME = 100G-fpga-network-stack-core
+ 
+@@ -26,21 +26,7 @@ VIVADO := $(XILINX_VIVADO)/bin/vivado
+ 
+ BINARY_CMAC_OBJS = $(TEMP_DIR)/${KRNL_NAME}.xo
+ 
+-ifeq (u5,$(findstring u5, $(DEVICE)))
+-	SUBMODULETARGET = hbm
+-endif
+-
+-ifeq (u200,$(findstring u200, $(DEVICE)))
+-	SUBMODULETARGET = all
+-endif
+-
+-ifeq (u250,$(findstring u250, $(DEVICE)))
+-	SUBMODULETARGET = all
+-endif
+-
+-ifeq (u280,$(findstring u280, $(DEVICE)))
+-	SUBMODULETARGET = hbm
+-endif
++SUBMODULETARGET = all
+ 
+ .PHONY: all clean cleanall 
+ all: check-devices check-vivado $(BINARY_CMAC_OBJS)  
+@@ -74,4 +60,4 @@ endif
+ check-vivado:
+ ifndef XILINX_VIVADO
+ 	$(error XILINX_VIVADO variable is not set, please set correctly and rerun)
+-endif
+\ No newline at end of file
++endif
+diff --git a/NetLayers/bd_network_layer.tcl b/NetLayers/bd_network_layer.tcl
+index c01a33b..a19dca3 100644
+--- a/NetLayers/bd_network_layer.tcl
++++ b/NetLayers/bd_network_layer.tcl
+@@ -37,7 +37,7 @@ set script_folder [_tcl::get_script_folder]
+ 
+ set list_projs [get_projects -quiet]
+ if { $list_projs eq "" } {
+-   create_project project_1 myproj -part xcu280-fsvh2892-2L-e
++   create_project project_1 myproj -part xczu48dr-ffvg1517-2-e
+ }
+ 
+ 
+diff --git a/NetLayers/platform.tcl b/NetLayers/platform.tcl
+index 82717a2..6cacc7f 100755
+--- a/NetLayers/platform.tcl
++++ b/NetLayers/platform.tcl
+@@ -5,17 +5,4 @@
+ set words [split $device "_"]
+ set board [lindex $words 1]
+ 
+-if {[string first "u50" ${board}] != -1} {
+-    set projPart "xcu50-fsvh2104-2L-e"
+-} elseif {[string first "u55" ${board}] != -1} {
+-    set projPart "xcu55c-fsvh2892-2L-e"
+-} elseif {[string first "u200" ${board}] != -1} {
+-    set projPart "xcu200-fsgd2104-2-e"
+-} elseif {[string first "u250" ${board}] != -1} {
+-    set projPart "xcu250-figd2104-2L-e"
+-} elseif {[string first "u280" ${board}] != -1} {
+-    set projPart "xcu280-fsvh2892-2L-e"
+-} else {
+-    catch {common::send_gid_msg -ssname BD::TCL -id 2041 -severity "ERROR" "unsupported device: ${device}"}
+-    return 1
+-}
+\ No newline at end of file
++set projPart "xczu48dr-ffvg1517-2-e"

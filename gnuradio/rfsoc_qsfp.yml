@@ -1,0 +1,7 @@
+name: rfsoc_qsfp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - gnuradio=3.10
+  - gnuradio-build-deps

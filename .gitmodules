@@ -1,0 +1,3 @@
+[submodule "boards/ip_repo/xup_vitis_network_example"]
+	path = boards/ip_repo/xup_vitis_network_example
+	url = https://github.com/Xilinx/xup_vitis_network_example.git

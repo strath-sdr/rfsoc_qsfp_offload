@@ -1,0 +1,40 @@
+diff --git a/Makefile b/Makefile
+index c7e59ae..3d949cd 100644
+--- a/Makefile
++++ b/Makefile
+@@ -10,7 +10,7 @@ create_folder_noHBM:
+ 
+ .PHONY:hbm
+ hbm: create_folder_HBM
+-	make -C synthesis_results_HMB FPGAPART=xcu280-fsvh2892-2L-e -j4
++	make -C synthesis_results_HMB FPGAPART=xczu48dr-ffvg1517-2-e -j4
+ 
+ create_folder_HBM:
+ 	mkdir -p synthesis_results_HMB
+@@ -20,4 +20,4 @@ clean:
+ 	rm -rf *.log *.jou
+ 
+ distclean:
+-	rm -rf synthesis_results_noHMB synthesis_results_HMB
+\ No newline at end of file
++	rm -rf synthesis_results_noHMB synthesis_results_HMB
+diff --git a/Makefile.synthesis b/Makefile.synthesis
+index ad0d4af..b9b9dc1 100644
+--- a/Makefile.synthesis
++++ b/Makefile.synthesis
+@@ -12,7 +12,7 @@ PORTSRC=$(TOPDIR)/hls/port_handler
+ TCLDIR=$(TOPDIR)/scripts
+ 
+ 
+-FPGAPART ?= xcu250-figd2104-2L-e
++FPGAPART ?= xczu48dr-ffvg1517-2-e
+ 
+ project = ARP_hls_prj ETH_inserter_hls_prj ICMP_hls_prj PKT_HANDLER_prj UDP_prj
+ 
+@@ -82,4 +82,4 @@ help:
+ 	@echo -e "    \e[94mmake $(project)\e[39m"
+ 	@echo ""
+ 	@echo "Remember that you can always review this help with"
+-	@echo -e "    \e[94mmake help\e[39m"
+\ No newline at end of file
++	@echo -e "    \e[94mmake help\e[39m"

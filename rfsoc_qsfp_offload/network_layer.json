@@ -1,0 +1,452 @@
+{
+    "mac_address": {
+        "address_offset": 16,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 0
+    },
+    "ip_address": {
+        "address_offset": 24,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 1
+    },
+    "gateway": {
+        "address_offset": 28,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 2
+    },
+    "ip_mask": {
+        "address_offset": 32,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 3
+    },
+    "eth_in_cycles": {
+        "address_offset": 1024,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 4
+    },
+    "eth_in_bytes": {
+        "address_offset": 1032,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 5
+    },
+    "eth_in_packets": {
+        "address_offset": 1040,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 6
+    },
+    "pkth_in_cycles": {
+        "address_offset": 1048,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 7
+    },
+    "pkth_in_bytes": {
+        "address_offset": 1056,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 8
+    },
+    "pkth_in_packets": {
+        "address_offset": 1064,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 9
+    },
+    "arp_in_cycles": {
+        "address_offset": 1072,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 10
+    },
+    "arp_in_bytes": {
+        "address_offset": 1080,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 11
+    },
+    "arp_in_packets": {
+        "address_offset": 1088,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 12
+    },
+    "arp_out_cycles": {
+        "address_offset": 1096,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 13
+    },
+    "arp_out_bytes": {
+        "address_offset": 1104,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 14
+    },
+    "arp_out_packets": {
+        "address_offset": 1112,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 15
+    },
+    "icmp_in_cycles": {
+        "address_offset": 1120,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 16
+    },
+    "icmp_in_bytes": {
+        "address_offset": 1128,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 17
+    },
+    "icmp_in_packets": {
+        "address_offset": 1136,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 18
+    },
+    "icmp_out_cycles": {
+        "address_offset": 1144,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 19
+    },
+    "icmp_out_bytes": {
+        "address_offset": 1152,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 20
+    },
+    "icmp_out_packets": {
+        "address_offset": 1160,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 21
+    },
+    "ethhi_out_cycles": {
+        "address_offset": 1168,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 22
+    },
+    "ethhi_out_bytes": {
+        "address_offset": 1176,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 23
+    },
+    "ethhi_out_packets": {
+        "address_offset": 1184,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 24
+    },
+    "eth_out_cycles": {
+        "address_offset": 1192,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 25
+    },
+    "eth_out_bytes": {
+        "address_offset": 1200,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 26
+    },
+    "eth_out_packets": {
+        "address_offset": 1208,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 27
+    },
+    "udp_in_cycles": {
+        "address_offset": 1216,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 28
+    },
+    "udp_in_bytes": {
+        "address_offset": 1224,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 29
+    },
+    "udp_in_packets": {
+        "address_offset": 1232,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 30
+    },
+    "app_out_cycles": {
+        "address_offset": 1240,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 31
+    },
+    "app_out_bytes": {
+        "address_offset": 1248,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 32
+    },
+    "app_out_packets": {
+        "address_offset": 1256,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 33
+    },
+    "udp_out_cycles": {
+        "address_offset": 1264,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 34
+    },
+    "udp_out_bytes": {
+        "address_offset": 1272,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 35
+    },
+    "udp_out_packets": {
+        "address_offset": 1280,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 36
+    },
+    "app_in_cycles": {
+        "address_offset": 1288,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 37
+    },
+    "app_in_bytes": {
+        "address_offset": 1296,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 38
+    },
+    "app_in_packets": {
+        "address_offset": 1304,
+        "access": "read-write;",
+        "size": 64,
+        "host_size": 8,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 39
+    },
+    "debug_reset_counters": {
+        "address_offset": 1520,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 40
+    },
+    "udp_theirIP_offset": {
+        "address_offset": 2064,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 41
+    },
+    "udp_theirPort_offset": {
+        "address_offset": 2192,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 42
+    },
+    "udp_myPort_offset": {
+        "address_offset": 2320,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 43
+    },
+    "udp_valid_offset": {
+        "address_offset": 2448,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 44
+    },
+    "udp_number_sockets": {
+        "address_offset": 2576,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 45
+    },
+    "arp_discovery": {
+        "address_offset": 4112,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 46
+    },
+    "arp_valid_offset": {
+        "address_offset": 4352,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 47
+    },
+    "arp_ip_addr_offset": {
+        "address_offset": 5120,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 48
+    },
+    "arp_mac_addr_offset": {
+        "address_offset": 6144,
+        "access": "read-write;",
+        "size": 32,
+        "host_size": 4,
+        "description": "OpenCL Argument Register",
+        "type": "uint",
+        "id": 49
+    }
+}
