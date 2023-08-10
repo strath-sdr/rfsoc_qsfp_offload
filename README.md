@@ -56,10 +56,13 @@ echo $PATH
 Then run `make` in the top level directory.
 
 ```
+make patch
 make all
 ```
 
-This will patch and build the Network Layer IP, build the Vivado project, and generate the bitstream and HWH files required for the overlay.
+This will patch and build the Network Layer IP, build the Vivado project, and generate the bitstream and HWH files required for the overlay. 
+
+```make patch``` needs to be run only once after the repository is cloned. ```make all``` can be re-run after ```make clean``` command is issued.
 
 ## PC/Server Setup
 

@@ -33,16 +33,49 @@ options:
     state: enabled
 
 blocks:
-- name: center_f
-  id: variable
+- name: center_F
+  id: variable_qtgui_range
   parameters:
     comment: ''
-    value: 1228.8e6
+    gui_hint: qtgui_tab@0:(0,2)
+    label: 'Center frequency (MHz):'
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: -4195.2*1e6/2
+    step: '0.001'
+    stop: 4195.2*1e6/2
+    value: '800.0'
+    widget: counter
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [344, 8.0]
+    coordinate: [312, 8.0]
+    rotation: 0
+    state: true
+- name: center_f
+  id: variable
+  parameters:
+    comment: ''
+    value: center_F*1e6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 144.0]
+    rotation: 0
+    state: enabled
+- name: ip_address
+  id: variable
+  parameters:
+    comment: ''
+    value: '"Insert your own IP"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [480, 8.0]
     rotation: 0
     state: true
 - name: packet_size
@@ -54,21 +87,39 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [248, 8.0]
+    coordinate: [312, 216.0]
     rotation: 0
     state: true
 - name: samp_rate
-  id: variable
+  id: variable_qtgui_chooser
   parameters:
     comment: ''
-    value: 2457.6*1e6
+    gui_hint: qtgui_tab@0:(0,1)
+    label: Sample rate
+    label0: d = 2, fs = 2457.6e6
+    label1: d = 4, fs =  1228.8e6
+    label2: d = 8, fs = 614.4e6
+    label3: d = 16, fs = 307.2e6
+    label4: ''
+    labels: '[]'
+    num_opts: '4'
+    option0: 2457.6e6
+    option1: 1228.8e6
+    option2: 614.4e6
+    option3: 307.2e6
+    option4: '4'
+    options: '[0, 1, 2]'
+    orient: Qt.QVBoxLayout
+    type: real
+    value: 2457.6e6
+    widget: combo_box
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [152, 8.0]
+    coordinate: [152, 4.0]
     rotation: 0
-    state: enabled
+    state: true
 - name: blocks_interleaved_short_to_complex_0
   id: blocks_interleaved_short_to_complex
   parameters:
@@ -84,7 +135,54 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [256, 160.0]
+    coordinate: [248, 344.0]
+    rotation: 0
+    state: enabled
+- name: blocks_message_debug_0
+  id: blocks_message_debug
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    en_uvec: 'True'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [760, 360.0]
+    rotation: 0
+    state: true
+- name: blocks_message_debug_1
+  id: blocks_message_debug
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    en_uvec: 'True'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [760, 504.0]
+    rotation: 0
+    state: enabled
+- name: blocks_probe_rate_0
+  id: blocks_probe_rate
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha: '0.15'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    mintime: '1000.0'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [496, 488.0]
     rotation: 0
     state: enabled
 - name: fosphor_qt_sink_c_0
@@ -95,15 +193,15 @@ blocks:
     comment: ''
     freq_center: center_f
     freq_span: samp_rate
-    gui_hint: ''
+    gui_hint: qtgui_tab@0:(1,0,1,4)
     maxoutbuf: '0'
     minoutbuf: '0'
-    wintype: window.WIN_BLACKMAN_hARRIS
+    wintype: window.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [488, 160.0]
+    coordinate: [480, 344.0]
     rotation: 0
     state: enabled
 - name: network_udp_source_0
@@ -126,14 +224,164 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 136.0]
+    coordinate: [0, 320.0]
+    rotation: 0
+    state: true
+- name: qtgui_graphicitem_0
+  id: qtgui_graphicitem
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    file: ../assets/rfsoc-pynq.png
+    fixedsize: 'True'
+    gui_hint: qtgui_tab@0:(0,0)
+    height: '1'
+    scaleImage: 'True'
+    width: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [0, 96.0]
+    rotation: 0
+    state: true
+- name: qtgui_tab
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: ''
+    label0: gr-fosphor
+    label1: waterfall
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Tab 2
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 168.0]
+    rotation: 0
+    state: true
+- name: qtgui_waterfall_sink_x_0
+  id: qtgui_waterfall_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '0'
+    color10: '0'
+    color2: '0'
+    color3: '0'
+    color4: '0'
+    color5: '0'
+    color6: '0'
+    color7: '0'
+    color8: '0'
+    color9: '0'
+    comment: ''
+    fc: center_f
+    fftsize: '4096'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: qtgui_tab@1
+    int_max: '10'
+    int_min: '-140'
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    showports: 'False'
+    type: complex
+    update_time: '0.10'
+    wintype: window.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [496, 640.0]
+    rotation: 0
+    state: true
+- name: xmlrpc_client_0
+  id: xmlrpc_client
+  parameters:
+    addr: ip_address
+    alias: ''
+    callback: set_decimation
+    comment: ''
+    port: '8080'
+    variable: samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [480, 80.0]
+    rotation: 0
+    state: true
+- name: xmlrpc_client_0_0
+  id: xmlrpc_client
+  parameters:
+    addr: ip_address
+    alias: ''
+    callback: set_fc
+    comment: ''
+    port: '8080'
+    variable: center_F
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [480, 184.0]
     rotation: 0
     state: true
 
 connections:
+- [blocks_interleaved_short_to_complex_0, '0', blocks_probe_rate_0, '0']
 - [blocks_interleaved_short_to_complex_0, '0', fosphor_qt_sink_c_0, '0']
+- [blocks_interleaved_short_to_complex_0, '0', qtgui_waterfall_sink_x_0, '0']
+- [blocks_probe_rate_0, rate, blocks_message_debug_1, print]
+- [fosphor_qt_sink_c_0, freq, blocks_message_debug_0, print]
 - [network_udp_source_0, '0', blocks_interleaved_short_to_complex_0, '0']
 
 metadata:
   file_format: 1
-  grc_version: 3.10.3.0
+  grc_version: 3.10.6.0
