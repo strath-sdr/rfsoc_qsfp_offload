@@ -15,7 +15,7 @@ build_ip: vivado_check
 	$(MAKE) all -C ./boards/ip_repo/xup_vitis_network_example/NetLayers
 
 vivado_prj: vivado_check build_ip
-	$(MAKE) all -C ./boards/RFSoC4x2/rfsoc_offload/
+	$(MAKE) all -C ./boards/RFSoC4x2/rfsoc_qsfp_offload/
 
 clean:
 	$(MAKE) clean -C ./boards/ip_repo/xup_vitis_network_example/NetLayers
