@@ -31,7 +31,7 @@ Once installation has complete you will find the package folder in the Jupyter w
 
 The following software is required to use the project files in this repository.
 
-* Vitis Core Development Kit 2021.1
+* Vitis Core Development Kit 2021.1 with [Y2K22](https://support.xilinx.com/s/article/76960?language=en_US) patch applied
 * Vivado Design Suite 2021.1
 * Git
 
