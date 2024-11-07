@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 26 14:26:26 2023" VIVADOVERSION="2021.1_AR76780">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov  6 19:58:29 2024" VIVADOVERSION="2021.1">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="realdigital.org:rfsoc4x2:part0:1.0" DEVICE="xczu48dr" NAME="block_design" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
