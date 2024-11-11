@@ -4,6 +4,7 @@ import numpy as np
 import sys
 import argparse
 from rfsoc_qsfp_offload.overlay import Overlay
+from pynq import allocate
 
 global exit_flag
 
@@ -44,12 +45,15 @@ def main(args):
     
     # Load signal
     tx_file = open(args.signal_file, mode='rb')
-    tx_buffer = np.fromfile(tx_file)
+    tx_signal = np.fromfile(tx_file, dtype=np.int16)
+    tx_buffer = allocate(shape=(tx_signal.size,), dtype=np.int16)
+    tx_buffer[:] = tx_signal
 
     # Transmit
     print("Starting signal transmission")
     print("Ctrl-C to exit")
     ol.axi_dma_dac.sendchannel.transfer(tx_buffer, cyclic=True)
+    ol.rfdc.dac_tiles[0].blocks[0].MixerSettings['Freq'] = args.freq
 
     while(not exit_flag):
         time.sleep(1)
@@ -76,7 +80,7 @@ if __name__ == "__main__":
     parser.add_argument('-f', '--freq',type=float,help='Center frequency (MHz)',
                         default = '1000')
     parser.add_argument('-s', '--signal_file',type=str,help='Path to signal file',
-                        default = './tx_signal.bin')
+                        default = '/home/xilinx/tx_signal.bin')
                         
     args = parser.parse_args()
     main(args)
