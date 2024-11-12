@@ -39,7 +39,7 @@ def main(args):
 
     ADC_TILE = 2       # ADC Tile 226
     ADC_BLOCK = 0       # ADC Block 0
-    ADC_SAMPLE_FREQUENCY = 1228.8  # MSps
+    ADC_SAMPLE_FREQUENCY = 1024  # MSps
     ADC_PLL_FREQUENCY    = 491.52   # MHz
     ADC_FC = -1*f_c # Tune to center frequency
 
