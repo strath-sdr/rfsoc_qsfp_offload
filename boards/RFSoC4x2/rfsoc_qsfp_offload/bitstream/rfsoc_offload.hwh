@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 26 14:26:26 2023" VIVADOVERSION="2021.1_AR76780">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 21 15:57:41 2024" VIVADOVERSION="2022.1">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="realdigital.org:rfsoc4x2:part0:1.0" DEVICE="xczu48dr" NAME="block_design" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
@@ -199,7 +199,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="25" FULLNAME="/axi_dma_cmac" HWVERSION="7.1" INSTANCE="axi_dma_cmac" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_dma" VLNV="xilinx.com:ip:axi_dma:7.1">
+    <MODULE COREREVISION="27" FULLNAME="/axi_dma_cmac" HWVERSION="7.1" INSTANCE="axi_dma_cmac" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_dma" VLNV="xilinx.com:ip:axi_dma:7.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_dma;v=v7_1;d=pg021_axi_dma.pdf"/>
       </DOCUMENTS>
@@ -1588,7 +1588,7 @@
         <PERIPHERAL INSTANCE="zynq_ultra_ps_e_0"/>
       </PERIPHERALS>
     </MODULE>
-    <MODULE COREREVISION="25" FULLNAME="/axi_dma_dac" HWVERSION="7.1" INSTANCE="axi_dma_dac" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_dma" VLNV="xilinx.com:ip:axi_dma:7.1">
+    <MODULE COREREVISION="27" FULLNAME="/axi_dma_dac" HWVERSION="7.1" INSTANCE="axi_dma_dac" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_dma" VLNV="xilinx.com:ip:axi_dma:7.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_dma;v=v7_1;d=pg021_axi_dma.pdf"/>
       </DOCUMENTS>
@@ -3011,7 +3011,7 @@
         <PERIPHERAL INSTANCE="axis_tkeep_pack_0"/>
       </PERIPHERALS>
     </MODULE>
-    <MODULE COREREVISION="15" FULLNAME="/axi_intc_0" HWVERSION="4.1" INSTANCE="axi_intc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="INTERRUPT_CNTLR" MODTYPE="axi_intc" VLNV="xilinx.com:ip:axi_intc:4.1">
+    <MODULE COREREVISION="17" FULLNAME="/axi_intc_0" HWVERSION="4.1" INSTANCE="axi_intc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="INTERRUPT_CNTLR" MODTYPE="axi_intc" VLNV="xilinx.com:ip:axi_intc:4.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_intc;v=v4_1;d=pg099-axi-intc.pdf"/>
       </DOCUMENTS>
@@ -4718,7 +4718,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE BD="block_design_axi_smc_0" BDTYPE="SBD" COREREVISION="16" DRIVERMODE="CORE" FULLNAME="/axi_smc" HWVERSION="1.0" INSTANCE="axi_smc" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="smartconnect" SIM_BD="block_design_axi_smc_0" VLNV="xilinx.com:ip:smartconnect:1.0">
+    <MODULE BD="block_design_axi_smc_0" BDTYPE="SBD" COREREVISION="18" DRIVERMODE="CORE" FULLNAME="/axi_smc" HWVERSION="1.0" INSTANCE="axi_smc" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="smartconnect" SIM_BD="block_design_axi_smc_0" VLNV="xilinx.com:ip:smartconnect:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -5233,7 +5233,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="22" FULLNAME="/axis_combiner_0" HWVERSION="1.1" INSTANCE="axis_combiner_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_combiner" VLNV="xilinx.com:ip:axis_combiner:1.1">
+    <MODULE COREREVISION="24" FULLNAME="/axis_combiner_0" HWVERSION="1.1" INSTANCE="axis_combiner_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_combiner" VLNV="xilinx.com:ip:axis_combiner:1.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_combiner;v=v1_1;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -5374,7 +5374,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/axis_data_fifo_0" HWVERSION="2.0" INSTANCE="axis_data_fifo_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
+    <MODULE COREREVISION="8" FULLNAME="/axis_data_fifo_0" HWVERSION="2.0" INSTANCE="axis_data_fifo_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_data_fifo;v=v2_0;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -5524,7 +5524,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/axis_data_fifo_1" HWVERSION="2.0" INSTANCE="axis_data_fifo_1" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
+    <MODULE COREREVISION="8" FULLNAME="/axis_data_fifo_1" HWVERSION="2.0" INSTANCE="axis_data_fifo_1" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_data_fifo;v=v2_0;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -5858,7 +5858,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="24" FULLNAME="/axis_subset_converter_0" HWVERSION="1.1" INSTANCE="axis_subset_converter_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_subset_converter" VLNV="xilinx.com:ip:axis_subset_converter:1.1">
+    <MODULE COREREVISION="26" FULLNAME="/axis_subset_converter_0" HWVERSION="1.1" INSTANCE="axis_subset_converter_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_subset_converter" VLNV="xilinx.com:ip:axis_subset_converter:1.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_subset_converter;v=v1_1;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -5893,7 +5893,7 @@
         <PARAMETER NAME="M_HAS_TLAST" VALUE="0"/>
         <PARAMETER NAME="HAS_ACLKEN" VALUE="0"/>
         <PARAMETER NAME="DEFAULT_TLAST" VALUE="0"/>
-        <PARAMETER NAME="TDATA_REMAP" VALUE="tdata[255:240], tdata[127:112], tdata[239:224], tdata[111:96], tdata[223:208], tdata[95:80], tdata[207:192], tdata[79:64], tdata[191:176], tdata[63:48], tdata[175:160], tdata[47:32], tdata[159:144], tdata[31:16], tdata[143:128], tdata[15:0]"/>
+        <PARAMETER NAME="TDATA_REMAP" VALUE=" tdata[255:240], tdata[127:112], tdata[239:224], tdata[111:96], tdata[223:208], tdata[95:80], tdata[207:192], tdata[79:64], tdata[191:176], tdata[63:48], tdata[175:160], tdata[47:32], tdata[159:144], tdata[31:16], tdata[143:128], tdata[15:0]"/>
         <PARAMETER NAME="TUSER_REMAP" VALUE="1'b0"/>
         <PARAMETER NAME="TID_REMAP" VALUE="1'b0"/>
         <PARAMETER NAME="TDEST_REMAP" VALUE="1'b0"/>
@@ -6092,7 +6092,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="8" FULLNAME="/clk_wiz_0" HWVERSION="6.0" INSTANCE="clk_wiz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
+    <MODULE COREREVISION="10" FULLNAME="/clk_wiz_0" HWVERSION="6.0" INSTANCE="clk_wiz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_wiz;v=v6_0;d=pg065-clk-wiz.pdf"/>
       </DOCUMENTS>
@@ -6703,7 +6703,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="8" FULLNAME="/clk_wiz_1" HWVERSION="6.0" INSTANCE="clk_wiz_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
+    <MODULE COREREVISION="10" FULLNAME="/clk_wiz_1" HWVERSION="6.0" INSTANCE="clk_wiz_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_wiz;v=v6_0;d=pg065-clk-wiz.pdf"/>
       </DOCUMENTS>
@@ -7315,7 +7315,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/cmac" HWVERSION="3.1" INSTANCE="cmac" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cmac_usplus" VLNV="xilinx.com:ip:cmac_usplus:3.1">
+    <MODULE COREREVISION="9" FULLNAME="/cmac" HWVERSION="3.1" INSTANCE="cmac" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cmac_usplus" VLNV="xilinx.com:ip:cmac_usplus:3.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=cmac_usplus;v=v3_1;d=pg203-cmac-usplus.pdf"/>
       </DOCUMENTS>
@@ -8297,7 +8297,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/dma_fifo_rx" HWVERSION="2.0" INSTANCE="dma_fifo_rx" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
+    <MODULE COREREVISION="8" FULLNAME="/dma_fifo_rx" HWVERSION="2.0" INSTANCE="dma_fifo_rx" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_data_fifo;v=v2_0;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -8475,7 +8475,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/dma_fifo_tx" HWVERSION="2.0" INSTANCE="dma_fifo_tx" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
+    <MODULE COREREVISION="8" FULLNAME="/dma_fifo_tx" HWVERSION="2.0" INSTANCE="dma_fifo_tx" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_data_fifo;v=v2_0;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -8905,7 +8905,7 @@
     <MODULE COREREVISION="1" FULLNAME="/netlayer" HWVERSION="1.0" INSTANCE="netlayer" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="networklayer" VLNV="xilinx.com:RTLKernel:networklayer:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="S_AXIL_nl" NAME="reg0" RANGE="65536" USAGE="register"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="S_AXIL_nl" NAME="reg0" RANGE="0x10000" USAGE="register"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
         <PARAMETER NAME="AXIL_CTRL_ADDR_WIDTH" VALUE="16"/>
@@ -9272,7 +9272,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="24" FULLNAME="/netlayer_switch" HWVERSION="1.1" INSTANCE="netlayer_switch" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axis_switch" VLNV="xilinx.com:ip:axis_switch:1.1">
+    <MODULE COREREVISION="26" FULLNAME="/netlayer_switch" HWVERSION="1.1" INSTANCE="netlayer_switch" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axis_switch" VLNV="xilinx.com:ip:axis_switch:1.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_switch;v=v1_1;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -10157,7 +10157,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="25" FULLNAME="/ps8_0_axi_periph" HWVERSION="2.1" INSTANCE="ps8_0_axi_periph" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axi_interconnect" VLNV="xilinx.com:ip:axi_interconnect:2.1">
+    <MODULE COREREVISION="27" FULLNAME="/ps8_0_axi_periph" HWVERSION="2.1" INSTANCE="ps8_0_axi_periph" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axi_interconnect" VLNV="xilinx.com:ip:axi_interconnect:2.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_interconnect;v=v2_1;d=pg059-axi-interconnect.pdf"/>
       </DOCUMENTS>
@@ -11818,9 +11818,9 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="0" FULLNAME="/rfdc" HWVERSION="2.5" INSTANCE="rfdc" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="usp_rf_data_converter" VLNV="xilinx.com:ip:usp_rf_data_converter:2.5">
+    <MODULE COREREVISION="2" FULLNAME="/rfdc" HWVERSION="2.6" INSTANCE="rfdc" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="usp_rf_data_converter" VLNV="xilinx.com:ip:usp_rf_data_converter:2.6">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=usp_rf_data_converter;v=v2_5;d=pg269-rf-data-converter.pdf"/>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=usp_rf_data_converter;v=v2_6;d=pg269-rf-data-converter.pdf"/>
       </DOCUMENTS>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="read-write" INTERFACE="s_axi" NAME="Reg" RANGE="262144" USAGE=""/>
@@ -11845,8 +11845,10 @@
         <PARAMETER NAME="C_Calibration_Time" VALUE="10"/>
         <PARAMETER NAME="C_DAC_NCO_RTS" VALUE="false"/>
         <PARAMETER NAME="C_DAC_VOP_RTS" VALUE="false"/>
+        <PARAMETER NAME="C_DAC_MTS_Variable_Fabric_Width" VALUE="false"/>
         <PARAMETER NAME="C_ADC_NCO_RTS" VALUE="false"/>
         <PARAMETER NAME="C_ADC_DSA_RTS" VALUE="false"/>
+        <PARAMETER NAME="C_ADC_MTS_Variable_Fabric_Width" VALUE="false"/>
         <PARAMETER NAME="C_RESERVED_2" VALUE="false"/>
         <PARAMETER NAME="C_ADC0_Enable" VALUE="0"/>
         <PARAMETER NAME="C_ADC0_PLL_Enable" VALUE="false"/>
@@ -12623,8 +12625,10 @@
         <PARAMETER NAME="Calibration_Time" VALUE="10"/>
         <PARAMETER NAME="DAC_NCO_RTS" VALUE="false"/>
         <PARAMETER NAME="DAC_VOP_RTS" VALUE="false"/>
+        <PARAMETER NAME="DAC_MTS_Variable_Fabric_Width" VALUE="false"/>
         <PARAMETER NAME="ADC_NCO_RTS" VALUE="false"/>
         <PARAMETER NAME="ADC_DSA_RTS" VALUE="false"/>
+        <PARAMETER NAME="ADC_MTS_Variable_Fabric_Width" VALUE="false"/>
         <PARAMETER NAME="ADC0_Enable" VALUE="0"/>
         <PARAMETER NAME="ADC0_PLL_Enable" VALUE="false"/>
         <PARAMETER NAME="ADC0_Sampling_Rate" VALUE="2.0"/>
@@ -14158,7 +14162,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/rx_fifo" HWVERSION="2.0" INSTANCE="rx_fifo" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
+    <MODULE COREREVISION="8" FULLNAME="/rx_fifo" HWVERSION="2.0" INSTANCE="rx_fifo" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_data_fifo;v=v2_0;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -14324,7 +14328,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE BD="block_design_smartconnect_0_0" BDTYPE="SBD" COREREVISION="16" DRIVERMODE="CORE" FULLNAME="/smartconnect_0" HWVERSION="1.0" INSTANCE="smartconnect_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="smartconnect" SIM_BD="block_design_smartconnect_0_0" VLNV="xilinx.com:ip:smartconnect:1.0">
+    <MODULE BD="block_design_smartconnect_0_0" BDTYPE="SBD" COREREVISION="18" DRIVERMODE="CORE" FULLNAME="/smartconnect_0" HWVERSION="1.0" INSTANCE="smartconnect_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="smartconnect" SIM_BD="block_design_smartconnect_0_0" VLNV="xilinx.com:ip:smartconnect:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -14921,7 +14925,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/tx_fifo" HWVERSION="2.0" INSTANCE="tx_fifo" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
+    <MODULE COREREVISION="8" FULLNAME="/tx_fifo" HWVERSION="2.0" INSTANCE="tx_fifo" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:2.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_data_fifo;v=v2_0;d=pg085-axi4stream-infrastructure.pdf"/>
       </DOCUMENTS>
@@ -15078,7 +15082,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_0" HWVERSION="2.0" INSTANCE="util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="2" FULLNAME="/util_vector_logic_0" HWVERSION="2.0" INSTANCE="util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -15101,7 +15105,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_1" HWVERSION="2.0" INSTANCE="util_vector_logic_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="2" FULLNAME="/util_vector_logic_1" HWVERSION="2.0" INSTANCE="util_vector_logic_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>
@@ -15301,10 +15305,13 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE CONFIGURABLE="TRUE" COREREVISION="5" FULLNAME="/zynq_ultra_ps_e_0" HWVERSION="3.3" INSTANCE="zynq_ultra_ps_e_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" IS_PL="FALSE" MODTYPE="zynq_ultra_ps_e" VLNV="xilinx.com:ip:zynq_ultra_ps_e:3.3">
+    <MODULE CONFIGURABLE="TRUE" COREREVISION="0" FULLNAME="/zynq_ultra_ps_e_0" HWVERSION="3.4" INSTANCE="zynq_ultra_ps_e_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" IS_PL="FALSE" MODTYPE="zynq_ultra_ps_e" VLNV="xilinx.com:ip:zynq_ultra_ps_e:3.4">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=zynq_ultra_ps_e;v=v3_3;d=pg201-zynq-ultrascale-plus-processing-system.pdf"/>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=zynq_ultra_ps_e;v=v3_4;d=pg201-zynq-ultrascale-plus-processing-system.pdf"/>
       </DOCUMENTS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
+      </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP4" NAME="HP2_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
@@ -15340,8 +15347,8 @@
         <PARAMETER NAME="C_EN_EMIO_TRACE" VALUE="0"/>
         <PARAMETER NAME="C_TRACE_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_USE_DEBUG_TEST" VALUE="0"/>
-        <PARAMETER NAME="C_SD0_INTERNAL_BUS_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="C_SD1_INTERNAL_BUS_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_SD0_INTERNAL_BUS_WIDTH" VALUE="5"/>
+        <PARAMETER NAME="C_SD1_INTERNAL_BUS_WIDTH" VALUE="5"/>
         <PARAMETER NAME="C_NUM_F2P_0_INTR_INPUTS" VALUE="1"/>
         <PARAMETER NAME="C_NUM_F2P_1_INTR_INPUTS" VALUE="1"/>
         <PARAMETER NAME="C_EMIO_GPIO_WIDTH" VALUE="1"/>
@@ -15560,7 +15567,7 @@
         <PARAMETER NAME="PSU__PROTECTION__DDR_SEGMENTS" VALUE="NONE"/>
         <PARAMETER NAME="PSU__PROTECTION__OCM_SEGMENTS" VALUE="NONE"/>
         <PARAMETER NAME="PSU__PROTECTION__LPD_SEGMENTS" VALUE="SA:0xFF980000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFF5E0000; SIZE:2560; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFFCC0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFF180000; SIZE:768; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFF410000; SIZE:640; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFFA70000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFF9A0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware|SA:0xFF5E0000 ; SIZE:2560; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem|SA:0xFFCC0000 ; SIZE:64; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem|SA:0xFF180000 ; SIZE:768; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem|SA:0xFF9A0000 ; SIZE:64; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem"/>
-        <PARAMETER NAME="PSU__PROTECTION__FPD_SEGMENTS" VALUE="SA:0xFD1A0000; SIZE:1280; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD000000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD010000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD020000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD030000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD040000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD050000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD610000; SIZE:512; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD5D0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware | SA:0xFD1A0000 ; SIZE:1280; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem"/>
+        <PARAMETER NAME="PSU__PROTECTION__FPD_SEGMENTS" VALUE="SA:0xFD1A0000; SIZE:1280; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD000000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD010000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD020000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD030000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD040000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD050000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD610000; SIZE:512; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |   SA:0xFD5D0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware  |  SA:0xFD1A0000 ; SIZE:1280; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem"/>
         <PARAMETER NAME="PSU__PROTECTION__DEBUG" VALUE="0"/>
         <PARAMETER NAME="PSU__PROTECTION__SLAVES" VALUE="LPD;USB3_1_XHCI;FE300000;FE3FFFFF;0|LPD;USB3_1;FF9E0000;FF9EFFFF;0|LPD;USB3_0_XHCI;FE200000;FE2FFFFF;0|LPD;USB3_0;FF9D0000;FF9DFFFF;0|LPD;UART1;FF010000;FF01FFFF;0|LPD;UART0;FF000000;FF00FFFF;0|LPD;TTC3;FF140000;FF14FFFF;0|LPD;TTC2;FF130000;FF13FFFF;0|LPD;TTC1;FF120000;FF12FFFF;0|LPD;TTC0;FF110000;FF11FFFF;0|FPD;SWDT1;FD4D0000;FD4DFFFF;0|LPD;SWDT0;FF150000;FF15FFFF;0|LPD;SPI1;FF050000;FF05FFFF;0|LPD;SPI0;FF040000;FF04FFFF;0|FPD;SMMU_REG;FD5F0000;FD5FFFFF;1|FPD;SMMU;FD800000;FDFFFFFF;1|FPD;SIOU;FD3D0000;FD3DFFFF;1|FPD;SERDES;FD400000;FD47FFFF;1|LPD;SD1;FF170000;FF17FFFF;0|LPD;SD0;FF160000;FF16FFFF;0|FPD;SATA;FD0C0000;FD0CFFFF;0|LPD;RTC;FFA60000;FFA6FFFF;1|LPD;RSA_CORE;FFCE0000;FFCEFFFF;1|LPD;RPU;FF9A0000;FF9AFFFF;1|LPD;R5_TCM_RAM_GLOBAL;FFE00000;FFE3FFFF;1|LPD;R5_1_Instruction_Cache;FFEC0000;FFECFFFF;1|LPD;R5_1_Data_Cache;FFED0000;FFEDFFFF;1|LPD;R5_1_BTCM_GLOBAL;FFEB0000;FFEBFFFF;1|LPD;R5_1_ATCM_GLOBAL;FFE90000;FFE9FFFF;1|LPD;R5_0_Instruction_Cache;FFE40000;FFE4FFFF;1|LPD;R5_0_Data_Cache;FFE50000;FFE5FFFF;1|LPD;R5_0_BTCM_GLOBAL;FFE20000;FFE2FFFF;1|LPD;R5_0_ATCM_GLOBAL;FFE00000;FFE0FFFF;1|LPD;QSPI_Linear_Address;C0000000;DFFFFFFF;1|LPD;QSPI;FF0F0000;FF0FFFFF;0|LPD;PMU_RAM;FFDC0000;FFDDFFFF;1|LPD;PMU_GLOBAL;FFD80000;FFDBFFFF;1|FPD;PCIE_MAIN;FD0E0000;FD0EFFFF;0|FPD;PCIE_LOW;E0000000;EFFFFFFF;0|FPD;PCIE_HIGH2;8000000000;BFFFFFFFFF;0|FPD;PCIE_HIGH1;600000000;7FFFFFFFF;0|FPD;PCIE_DMA;FD0F0000;FD0FFFFF;0|FPD;PCIE_ATTRIB;FD480000;FD48FFFF;0|LPD;OCM_XMPU_CFG;FFA70000;FFA7FFFF;1|LPD;OCM_SLCR;FF960000;FF96FFFF;1|OCM;OCM;FFFC0000;FFFFFFFF;1|LPD;NAND;FF100000;FF10FFFF;0|LPD;MBISTJTAG;FFCF0000;FFCFFFFF;1|LPD;LPD_XPPU_SINK;FF9C0000;FF9CFFFF;1|LPD;LPD_XPPU;FF980000;FF98FFFF;1|LPD;LPD_SLCR_SECURE;FF4B0000;FF4DFFFF;1|LPD;LPD_SLCR;FF410000;FF4AFFFF;1|LPD;LPD_GPV;FE100000;FE1FFFFF;1|LPD;LPD_DMA_7;FFAF0000;FFAFFFFF;1|LPD;LPD_DMA_6;FFAE0000;FFAEFFFF;1|LPD;LPD_DMA_5;FFAD0000;FFADFFFF;1|LPD;LPD_DMA_4;FFAC0000;FFACFFFF;1|LPD;LPD_DMA_3;FFAB0000;FFABFFFF;1|LPD;LPD_DMA_2;FFAA0000;FFAAFFFF;1|LPD;LPD_DMA_1;FFA90000;FFA9FFFF;1|LPD;LPD_DMA_0;FFA80000;FFA8FFFF;1|LPD;IPI_CTRL;FF380000;FF3FFFFF;1|LPD;IOU_SLCR;FF180000;FF23FFFF;1|LPD;IOU_SECURE_SLCR;FF240000;FF24FFFF;1|LPD;IOU_SCNTRS;FF260000;FF26FFFF;1|LPD;IOU_SCNTR;FF250000;FF25FFFF;1|LPD;IOU_GPV;FE000000;FE0FFFFF;1|LPD;I2C1;FF030000;FF03FFFF;0|LPD;I2C0;FF020000;FF02FFFF;0|FPD;GPU;FD4B0000;FD4BFFFF;0|LPD;GPIO;FF0A0000;FF0AFFFF;1|LPD;GEM3;FF0E0000;FF0EFFFF;0|LPD;GEM2;FF0D0000;FF0DFFFF;0|LPD;GEM1;FF0C0000;FF0CFFFF;0|LPD;GEM0;FF0B0000;FF0BFFFF;0|FPD;FPD_XMPU_SINK;FD4F0000;FD4FFFFF;1|FPD;FPD_XMPU_CFG;FD5D0000;FD5DFFFF;1|FPD;FPD_SLCR_SECURE;FD690000;FD6CFFFF;1|FPD;FPD_SLCR;FD610000;FD68FFFF;1|FPD;FPD_DMA_CH7;FD570000;FD57FFFF;1|FPD;FPD_DMA_CH6;FD560000;FD56FFFF;1|FPD;FPD_DMA_CH5;FD550000;FD55FFFF;1|FPD;FPD_DMA_CH4;FD540000;FD54FFFF;1|FPD;FPD_DMA_CH3;FD530000;FD53FFFF;1|FPD;FPD_DMA_CH2;FD520000;FD52FFFF;1|FPD;FPD_DMA_CH1;FD510000;FD51FFFF;1|FPD;FPD_DMA_CH0;FD500000;FD50FFFF;1|LPD;EFUSE;FFCC0000;FFCCFFFF;1|FPD;Display Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD050000;FD05FFFF;1|FPD;DDR_XMPU4_CFG;FD040000;FD04FFFF;1|FPD;DDR_XMPU3_CFG;FD030000;FD03FFFF;1|FPD;DDR_XMPU2_CFG;FD020000;FD02FFFF;1|FPD;DDR_XMPU1_CFG;FD010000;FD01FFFF;1|FPD;DDR_XMPU0_CFG;FD000000;FD00FFFF;1|FPD;DDR_QOS_CTRL;FD090000;FD09FFFF;1|FPD;DDR_PHY;FD080000;FD08FFFF;1|DDR;DDR_LOW;0;7FFFFFFF;1|DDR;DDR_HIGH;800000000;800000000;0|FPD;DDDR_CTRL;FD070000;FD070FFF;1|LPD;Coresight;FE800000;FEFFFFFF;1|LPD;CSU_DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FFFF;1|FPD;CRF_APB;FD1A0000;FD2DFFFF;1|FPD;CCI_REG;FD5E0000;FD5EFFFF;1|LPD;CAN1;FF070000;FF07FFFF;0|LPD;CAN0;FF060000;FF06FFFF;0|FPD;APU;FD5C0000;FD5CFFFF;1|LPD;APM_INTC_IOU;FFA20000;FFA2FFFF;1|LPD;APM_FPD_LPD;FFA30000;FFA3FFFF;1|FPD;APM_5;FD490000;FD49FFFF;1|FPD;APM_0;FD0B0000;FD0BFFFF;1|LPD;APM2;FFA10000;FFA1FFFF;1|LPD;APM1;FFA00000;FFA0FFFF;1|LPD;AMS;FFA50000;FFA5FFFF;1|FPD;AFI_5;FD3B0000;FD3BFFFF;1|FPD;AFI_4;FD3A0000;FD3AFFFF;1|FPD;AFI_3;FD390000;FD39FFFF;1|FPD;AFI_2;FD380000;FD38FFFF;1|FPD;AFI_1;FD370000;FD37FFFF;1|FPD;AFI_0;FD360000;FD36FFFF;1|LPD;AFIFM6;FF9B0000;FF9BFFFF;1|FPD;ACPU_GIC;F9010000;F907FFFF;1"/>
         <PARAMETER NAME="PSU__PROTECTION__PRESUBSYSTEMS" VALUE="NONE"/>
@@ -15572,8 +15579,8 @@
         <PARAMETER NAME="SUBPRESET1" VALUE="Custom"/>
         <PARAMETER NAME="SUBPRESET2" VALUE="Custom"/>
         <PARAMETER NAME="PSU_UIPARAM_GENERATE_SUMMARY" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PSU_MIO_TREE_PERIPHERALS"/>
-        <PARAMETER NAME="PSU_MIO_TREE_SIGNALS"/>
+        <PARAMETER NAME="PSU_MIO_TREE_PERIPHERALS" VALUE="#############################################################################"/>
+        <PARAMETER NAME="PSU_MIO_TREE_SIGNALS" VALUE="#############################################################################"/>
         <PARAMETER NAME="PSU_PERIPHERAL_BOARD_PRESET"/>
         <PARAMETER NAME="PSU__NAND__PERIPHERAL__IO" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PSU__NAND__PERIPHERAL__ENABLE" VALUE="0"/>
@@ -15642,6 +15649,12 @@
         <PARAMETER NAME="PSU__SD0__SLOT_TYPE" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PSU__SD0__RESET__ENABLE" VALUE="0"/>
         <PARAMETER NAME="PSU__SD0__DATA_TRANSFER_MODE" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PSU__SD0__CLK_50_SDR_ITAP_DLY" VALUE="0x15"/>
+        <PARAMETER NAME="PSU__SD0__CLK_50_SDR_OTAP_DLY" VALUE="0x5"/>
+        <PARAMETER NAME="PSU__SD0__CLK_50_DDR_ITAP_DLY" VALUE="0x3D"/>
+        <PARAMETER NAME="PSU__SD0__CLK_50_DDR_OTAP_DLY" VALUE="0x4"/>
+        <PARAMETER NAME="PSU__SD0__CLK_100_SDR_OTAP_DLY" VALUE="0x3"/>
+        <PARAMETER NAME="PSU__SD0__CLK_200_SDR_OTAP_DLY" VALUE="0x3"/>
         <PARAMETER NAME="PSU__SD1__PERIPHERAL__ENABLE" VALUE="0"/>
         <PARAMETER NAME="PSU__SD1__PERIPHERAL__IO" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PSU__SD1__GRP_CD__ENABLE" VALUE="0"/>
@@ -15653,6 +15666,12 @@
         <PARAMETER NAME="PSU__SD1__SLOT_TYPE" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PSU__SD1__RESET__ENABLE" VALUE="0"/>
         <PARAMETER NAME="PSU__SD1__DATA_TRANSFER_MODE" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PSU__SD1__CLK_50_SDR_ITAP_DLY" VALUE="0x15"/>
+        <PARAMETER NAME="PSU__SD1__CLK_50_SDR_OTAP_DLY" VALUE="0x5"/>
+        <PARAMETER NAME="PSU__SD1__CLK_50_DDR_ITAP_DLY" VALUE="0x3D"/>
+        <PARAMETER NAME="PSU__SD1__CLK_50_DDR_OTAP_DLY" VALUE="0x4"/>
+        <PARAMETER NAME="PSU__SD1__CLK_100_SDR_OTAP_DLY" VALUE="0x3"/>
+        <PARAMETER NAME="PSU__SD1__CLK_200_SDR_OTAP_DLY" VALUE="0x3"/>
         <PARAMETER NAME="PSU__DEVICE_TYPE" VALUE="RFSOC"/>
         <PARAMETER NAME="PSU_SMC_CYCLE_T0" VALUE="NA"/>
         <PARAMETER NAME="PSU_SMC_CYCLE_T1" VALUE="NA"/>

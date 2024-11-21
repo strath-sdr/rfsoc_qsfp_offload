@@ -1,7 +1,11 @@
 # RFSoC QSFP to gr-fosphor Client Example
 This folder contains an example implementation of real-time spectrum analyser client for the RFSoC data offload project, based on GNU Radio (GR) and gr-fosphor.
 
-## Installation Guide
+## Recommended Installation Guide
+
+This updated installation guide simplifies the process using the [radioconda](https://github.com/ryanvolz/radioconda) environment, which comes with GNU Radio and gr-fosphor preconfigured. Users might still need to ensure OpenCL accelerators are set up correctly. Refer to the Legacy Installation Guide for hardware-specific instructions on setting up OpenCL accelerators.
+
+## Legacy Installation Guide (For Reference)
 This design is based on gr-fosphor GNU Radio block that utilizes OpenCL or OpenGL hardware acceleration to reach real-time processing speeds. 
 Installation is heavily dependant on the particular hardware used, thus the following instructions only will provide guidance and links to external resources.
 

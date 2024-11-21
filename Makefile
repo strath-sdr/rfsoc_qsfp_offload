@@ -1,4 +1,4 @@
-VIVADO_VERSION := 2021.1
+VIVADO_VERSION := 2022.1
 
 all: vivado_prj
 

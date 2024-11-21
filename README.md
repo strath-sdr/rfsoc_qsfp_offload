@@ -1,3 +1,16 @@
+<img src="./assets/strathsdr_banner.png" width="100%">
+
+<table border="0" align="center">
+    <tr border="0">
+        <td align="center" width="50%" border="0">
+            <img src="https://www.rfsocbook.com/wp-content/uploads/2022/12/RFSoC3D_v4-1433x1536.png" alt="oscthumb" style="width: 60%" border="0"/>
+        </td>
+        <td align="center" width="50%" border="0">
+            <font size=7><b>Available Now!</b></font size> <br> <font size=5>Software Defined Radio with Zynq® UltraScale+ RFSoC</font size> <br> <font size=4><a href="https://rfsocbook.com/">Free Download</a> <br><a href="https://www.amazon.com/Software-Defined-Radio-Ultrascale-RFSoC/dp/1739588606?keywords=zynq+rfsoc&qid=1673452844&sprefix=%2Caps%2C137&sr=8-1&linkCode=ll1&tag=thzybo-20&linkId=0bf245a543fd4af4625086df4c190928&language=en_US&ref_=as_li_ss_tl">Printed Edition</a></font size>
+        </td>
+    </tr>
+</table>
+
 # RFSoC Data Offload
 This repository contains an RFSoC4x2 reference design that enables high-speed data offload from the board to a PC/server, via the QSFP28 connection. The RF-ADC data is packetised into UDP packets using the open-source [Network Layer IP](https://github.com/xilinx/xup_vitis_network_example), and sent to the QSFP28 port via Xilinx's CMAC IP core.
 
@@ -9,10 +22,10 @@ The following is a list of equipment and software used for development and testi
 - [Mellanox MCX515A-CCAT Network Interface Card](https://www.fs.com/uk/products/119648.html) (NIC)
 - 2x [Mellanox MMA1B00-C100D QSFP28 Transceiver](https://www.fs.com/uk/products/71009.html)
 - [MTP-12 Female to Female Fibre-Optic Cable](https://www.fs.com/uk/products/69009.html?attribute=978&id=259837)
-- PCIe3.0 compatible computer (with QSFP28 NIC installed)
+- PCIe 3.0 compatible computer (with QSFP28 NIC installed)
 
 ### Software
-- [PYNQ v2.7](http://www.pynq.io/board.html)
+- [PYNQ v3.0.1](http://www.pynq.io/board.html)
 - [Jupyter-Lab](https://jupyter.org/)
 - [mstflint](https://github.com/Mellanox/mstflint)
 
@@ -31,8 +44,8 @@ Once installation has complete you will find the package folder in the Jupyter w
 
 The following software is required to use the project files in this repository.
 
-* Vitis Core Development Kit 2021.1 with [Y2K22](https://support.xilinx.com/s/article/76960?language=en_US) patch applied
-* Vivado Design Suite 2021.1
+* Vitis Core Development Kit 2022.1 with [Y2K22](https://support.xilinx.com/s/article/76960?language=en_US) patch applied
+* Vivado Design Suite 2022.1
 * Git
 
 ### Cloning the Repository
@@ -49,7 +62,7 @@ The Vivado project uses an external Network Layer IP repository that is included
 To build the project, first make sure Vitis and Vivado are on your `$PATH` environment variable.
 
 ```
-source <path-to-Vitis>/2021.1/settings64.sh
+source <path-to-Vitis>/2022.1/settings64.sh
 echo $PATH
 ```
 
@@ -89,3 +102,6 @@ Example using Gnome network manager interface:
 
 ### GNU Radio
 Instructions on installing GNU Radio and preparing to run the demo can be found in [gnuradio/README.md](gnuradio/README.md).
+
+## License
+[BSD 3-Clause](/LICENSE)
