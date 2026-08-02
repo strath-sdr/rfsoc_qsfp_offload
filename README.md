@@ -55,7 +55,7 @@ As this repo contains a submodule, clone the repo using the `--recursive` flag
 git clone https://github.com/strath-sdr/rfsoc_qsfp_offload.git --recursive
 ```
 
-### Building the Project
+### Building the Project on Linux
 
 The Vivado project uses an external Network Layer IP repository that is included as a submodule in the `./boards/ip_repo/` directory. The Network Layer IP uses a modified version of the repository that must be patched and built before the Vivado build process begins. This is all taken care of within the Makefile in the top level directory of this repo.
 
@@ -76,6 +76,36 @@ make all
 This will patch and build the Network Layer IP, build the Vivado project, and generate the bitstream and HWH files required for the overlay. 
 
 ```make patch``` needs to be run only once after the repository is cloned. ```make all``` can be re-run after ```make clean``` command is issued.
+
+### Building the Project on Windows
+ 
+To build on Windows, use MSYS2 and keep the project on a short path to avoid Windows' 260-character path limit.
+ 
+1. Install [MSYS2](https://www.msys2.org/), then in an **MSYS** terminal:
+```bash
+   pacman -S make git grep
+```
+2. Map a short drive letter to the repo (run as Administrator, in Command Prompt):
+```cmd
+   subst Z: <path-to>\rfsoc_qsfp_offload
+```
+   Always build from `Z:\` (i.e. `/z` in MSYS) — long paths can silently corrupt the IP packaging step.
+
+3. Add Xilinx tools to your environment (add to `~/.bashrc`, then `source ~/.bashrc`):
+```bash
+   export PATH="/<path-to-vivado>/Xilinx/Vivado/2022.1/bin:/<path-to-vitis>/Xilinx/Vitis/2022.1/bin:/<path-to-vivado>/Xilinx/Vitis_HLS/2022.1/bin:$PATH"
+   export XILINX_VIVADO="/<path-to-vivado>/Xilinx/Vivado/2022.1"
+   export XILINX_VITIS="/<path-to-vivado>/Xilinx/Vitis/2022.1"
+   export XILINX_HLS="/<path-to-vivado>/Xilinx/Vitis_HLS/2022.1"
+```
+4. Build from `/z`:
+```bash
+   cd /z
+   make patch
+   make all
+```
+ 
+**Note:** `subst` mappings don't persist across reboots. Re-run step 2 after restarting Windows.
 
 ## PC/Server Setup
 
